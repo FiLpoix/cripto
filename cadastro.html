@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Moeda Fácil</title>
+</head>
+<body>
+
+    <main>
+        <h1>Cadastre-se</h1>
+
+        <div class="container"  id="cadastro">
+            <form>
+                <div>
+                    <label for="nome">Nome: </label>
+                    <input class="cor" type="text" name="nome" id="nome" placeholder="Informe seu nome" data-form="nome" required maxlength="15">
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" data-form="email" required>
+                </div>
+                <div>
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite seu senha apenas 8 carácteres" data-form="senha" required maxlength="8">
+                </div>
+                <div>
+                    <label for="senhaRepetida">Repita sua senha: </label>
+                    <input type="password" name="senhaRepetida" id="senhaRepetida" placeholder="Digite novamente" data-form="senhaRepetida" required maxlength="8">
+                </div>
+                <p>Já possui conta? <span><a href="login.html">Entrar</a></span></p>
+                <button data-form="cadastrar">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+
+    <script type="module" src="./src/js/modulos/cadastro/cadastro.js"></script>
+</body>
+</html>
+

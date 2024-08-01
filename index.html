@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Moeda Fácil</title>
+</head>
+
+<body>
+
+    <main>
+        <h1>Conversão de moedas</h1>
+
+        <div>
+            <div>
+                <label for="valor">Valor: </label>
+                <input type="number" name="valor" id="valor" placeholder="ex.: 5.55">
+            </div>
+            <div>
+                <label for="moedasOrigem">Moeda de origem: </label>
+                <input type="text" name="moedasOrigem" id="moedasOrigem" placeholder="ex.: BRL">
+            </div>
+
+            <div>
+                <label for="moedasDestino" >Moeda de destino: </label>
+                <input type="text" name="moedasDestino" id="moedasDestino" placeholder="ex.: USD">
+            </div>
+
+            <button class="cca" data-converte>Converter</button>
+
+            <div id="resultado">
+                <h3>Resultado</h3>
+                <p>Valor convertido: <span id="valorConvert"></span></p>
+                <p>Taxa de câmbio atual: <span id="taxaCambio"></span></p>
+            </div>
+        </div>  
+
+        <button class="sair" data-logout>Sair</button>
+
+    </main>
+
+    <script src="./src/js/modulos/conversao/conversao.js"></script>
+    <script type="module" src="./src/js/modulos/logout/logout.js"></script>
+</body>
+
+</html>

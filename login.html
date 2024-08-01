@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moeda Fácil</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Login</h1>
+        <div id="login">
+            <form>
+                <div  class="container">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" data-form="email" required>
+                </div>
+                <div>
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite seu senha apenas 8 carácteres" data-form="senha" required maxlength="8">
+                </div>
+                <p>Não possui conta? <span><a href="cadastro.html">Cadastre-se</a></span></p>
+                <button data-form="login">Login</button>
+            </form>
+        </div>
+    </main>
+
+    <script type="module" src="./src/js/modulos/login/login.js"></script>
+</body>
+</html>
