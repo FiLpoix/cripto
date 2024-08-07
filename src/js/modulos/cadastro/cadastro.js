@@ -1,5 +1,8 @@
 const btnCadastro = document.querySelector('[data-form="cadastrar"]');
 
+console.log(localStorage.getItem('nome'), localStorage.getItem('email'), localStorage.getItem('senha'))
+
+
 btnCadastro.addEventListener('click', (event) => {
     event.preventDefault();
 

@@ -1,5 +1,15 @@
 const btnConverter = document.querySelector('[data-converte]');
 
+
+
+(function validar (){
+    if(localStorage.getItem('email') === null || localStorage.getItem('senha') === null){
+        window.location.href = 'cadastro.html';
+    }
+})()
+
+console.log(localStorage.getItem('nome'), localStorage.getItem('email'), localStorage.getItem('senha'))
+
 btnConverter.addEventListener("click", async (event) => {
     event.preventDefault()
 
