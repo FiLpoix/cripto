@@ -8,7 +8,6 @@ const btnConverter = document.querySelector('[data-converte]');
     }
 })()
 
-console.log(localStorage.getItem('nome'), localStorage.getItem('email'), localStorage.getItem('senha'))
 
 btnConverter.addEventListener("click", async (event) => {
     event.preventDefault()

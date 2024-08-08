@@ -6,10 +6,12 @@ btnLogin.addEventListener('click', (event) => {
     const email = document.querySelector('[data-form="email"]').value;
     const senha = document.querySelector('[data-form="senha"]').value;
 
-    if((email === localStorage.getItem("email")) && (senha === localStorage.getItem('senha'))){
+    let cadastros = JSON.parse(localStorage.getItem('cadastro'))
+
+    const usuarioLocalizado = cadastros.find(user => user.email === email && user.senha === senha);
+
+    if(usuarioLocalizado){
         window.location.href = 'index.html';
-    }else if((email === '') || (senha === '')){
-        alert('Campo vazio')
     }else{
         alert('Você não possui conta, cadastre-se!')
     }
