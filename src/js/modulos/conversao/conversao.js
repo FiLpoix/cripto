@@ -2,11 +2,11 @@ const btnConverter = document.querySelector('[data-converte]');
 
 
 
-(function validar (){
-    if(localStorage.getItem('email') === null || localStorage.getItem('senha') === null){
-        window.location.href = 'cadastro.html';
-    }
-})()
+// (function validar (){
+//     if(localStorage.getItem('email') === null || localStorage.getItem('senha') === null){
+//         window.location.href = 'cadastro.html';
+//     }
+// })()
 
 
 btnConverter.addEventListener("click", async (event) => {
